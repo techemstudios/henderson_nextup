@@ -1,11 +1,8 @@
-# Henderson - NextUp Programs      
+# Henderson Middle - Intro to Computer Science-  NextUp Program      
 
-Henderson Middle (NextUp) Intro to Computer Science - Session 2 (Winter 2018)  
+## Winter 2018 - Session 2  
 
-# Intro to Computer Science  
-
-### Introductions  
-
+### Introduction    
 * Name  
 * Age  
 * Grade  

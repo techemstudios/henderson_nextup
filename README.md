@@ -1,8 +1,6 @@
 # Henderson Middle - Intro to Computer Science  
 
-## NextUp  
-
-## Winter 2018 - Session 2  
+## NextUp: Session 2 - Winter 2018  
 
 ### Introduction    
 * Name  

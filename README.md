@@ -64,47 +64,6 @@ Ask the class, which group was more efficient (the least amount of steps).
 
 ***  
 
-## Code  
-
-*5 min*  
-
-Code lets you communicate! In general, *code* is a system for transferring information. People use code to communicate with another, and between a person and a machine. Examples:  
-
-* Morse  
-  - light (flashlights, sun & mirrors, etc.)  
-  - sound  
-  - dots & dashes (telegraph machines)  
-* Braille    
-* Human Languages  
-  - sign  
-  - speech  
-  - written
-  - shorthand (stenography)  
-* Computer languages  
-
-
-### How Computers Manage Information   
-
-*10 min*  
-
-Computers *speak* using binary; where only the digits 0 and 1 are used. Zero is "coded" to mean OFF, one is "coded" to mean ON. Relate to a light switch.
-
-Use the whiteboard to explain how computers translate numbers we use, decimal number system into the binary number system --by explaining the difference between the two by focusing on the place values.  
-
-Decimal numbers use a **Base 10** system, meaning it uses a total of ten digits:
-
-                    0 1 2 3 4 5 6 7 8 9  
-
-Binary numbers use a Base 2 system, two digits:  
-
-                    0 1
-
-### Binary Flashcards  
-
-*10 min*  
-
-An all class activity to visually see how the binary number system operates by practicing a method that converts decimal numbers to binary. Ask for five volunteers. Give each volunteer a big binary flashcard (dark side of cards facing the class). Arrange the students to be in correct place value order. Write the number one on the board, use the cards and input from the class to have each volunteer flip the correct cards (turn "ON") to collectively show the number, one in binary. Do this for the numbers, 2 - 10. The class should progressively get quicker.  
-
 ### Python  
 
 There are tons of different programming languages out there. We will learn how to write code in the Python programming language, an easy to read, understand and write language.  
@@ -129,20 +88,18 @@ Open up the terminal, help students get to the Hunderson folder.
 
 ```bash  
 mkdir your_name
-geany helloworld.py
+geany helloturtle.py
 ```  
 
-#### HelloWorld.py  
+#### helloturtle.py  
 
-Go over data types: strings, integers (INT), floats (FLOAT), boolean (BOOL). *see notes.py*  
-
-Actual: Introduction to Python with the turtle module.  
+Actual: Introduction to Python with the turtle module (up to loops, `for` and `while`).  
 
 ***  
 
 # Day Two  
 
-Review definition of a computer program, concepts from LightBot, and Binary numbers. Segue into computers handling data, or information. Important to review what efficiency is, this will open conversation into quick computer history.  
+Review definition of a computer program, concepts from turtle program. Segue into computers handling data, or information. Important to review what efficiency is, this will open conversation into quick computer history.  
 
 ## Computer History  
 
@@ -184,17 +141,62 @@ The main hardware component of these computers were **vacuum tubes**, switching 
 
 From the time of the invention of the Integrated Circuit, the # of circuits that could be placed on a single integrated circuit **DOUBLED** each year.  
 
+## Code  
+
+*5 min*  
+
+Code lets you communicate! In general, *code* is a system for transferring information. People use code to communicate with another, and between a person and a machine. Examples:  
+
+* Morse  
+  - light (flashlights, sun & mirrors, etc.)  
+  - sound  
+  - dots & dashes (telegraph machines)  
+* Braille    
+* Human Languages  
+  - sign  
+  - speech  
+  - written
+  - shorthand (stenography)  
+* Computer languages  
+
+
+### How Computers Manage Information   
+
+*10 min*  
+
+Computers *speak* using binary; where only the digits 0 and 1 are used. Zero is "coded" to mean OFF, one is "coded" to mean ON. Relate to a light switch.
+
+Use the whiteboard to explain how computers translate numbers we use, decimal number system into the binary number system --by explaining the difference between the two by focusing on the place values.  
+
+Decimal numbers use a **Base 10** system, meaning it uses a total of ten digits:
+
+                    0 1 2 3 4 5 6 7 8 9  
+
+Binary numbers use a Base 2 system, two digits:  
+
+                    0 1
+
+### Binary Flashcards  
+
+*10 min*  
+
+An all class activity to visually see how the binary number system operates by practicing a method that converts decimal numbers to binary. Ask for five volunteers. Give each volunteer a big binary flashcard (dark side of cards facing the class). Arrange the students to be in correct place value order. Write the number one on the board, use the cards and input from the class to have each volunteer flip the correct cards (turn "ON") to collectively show the number, one in binary. Do this for the numbers, 2 - 10. The class should progressively get quicker.  
+
 ***  
 
 # Day Three  
 
-### Logic Gates  
+## LED Circuit Demo  
+
+Pass around a Raspberry Pi once again. Connect the breadboard with all the [fixings](), choose a volunteer to plug in the Pi to a power source. Explain what is connected. Have students test the circuit for themselves by pressing the button, to see the control of electricity to the LED.  
+
+## Logic Gates  
 
 Review binary, value of 1 and zero and representations of each: 1 = On, True, Yes, etc.; 0 = Off, False, No, etc.  
 
 Devices that perform basic operations on electrical signals. The switching logic in tranistors and circuits comes down to zero and one.  
 
-### AND, OR, and NOT Gates  
+## AND, OR, and NOT Gates  
 
 
 How they operate, three ways we can represent them. Combine gates to form circuits.  

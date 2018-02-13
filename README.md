@@ -138,166 +138,76 @@ Go over data types: strings, integers (INT), floats (FLOAT), boolean (BOOL). *se
 
 Actual: Introduction to Python with the turtle module.  
 
-## Day Two  
+***  
 
-Review content from day one. Explain how to handle user input by starting to create a simple calculator program. Before typing any code, ask what we want this program to do:  
+# Day Two  
 
-1) We want to ask a user for two numbers and we want to store those numbers in a variable, so we can later use them.  
+Review definition of a computer program, concepts from LightBot, and Binary numbers. Segue into computers handling data, or information. Important to review what efficiency is, this will open conversation into quick computer history.  
 
-2) We need to get input from the user about which operation they want to perform on the two numbers.
+## Computer History  
 
-3) We'll need to check their text input to what operation symbol it matches with.
+What is considered the first computer?  
 
-4) Finally, we want to return the answer to the user.  
+What students have guessed before: the apple computer, super computer, and others.  
 
-```python  
-number1 = int(raw_input("Give me a number: "))
-number2 = int(raw_input("Give me another number: "))
-# with the raw_input() function, Python automatically thinks the text
-# from the user is a string. We add int() to convert the string to an integer
-# This will allow us to "mathematically" add the two numbers given by the user.
+### Start at Tally Sticks  
 
-operation raw_input("What operation would you like me to perform?")
+Has anyone used tally marks? We can use them to help us keep track of counting something. One of the first *early* computers was **tally sticks**, prehistory! Early computers were tools to help people perform math. Tally sticks work in the same way as tally marks; they would help early humans count to numbers beyond the finger on their hand. They might have counted crops or other items. Humans then began to create more efficient tools such as the **Abacus**, a calculator.  
 
-# our first condition statement (if this, then this)
-if operation == "+":
-  answer = number1 + number2
+### Babbage & the 1st Programmer  
 
-print(answer)
-```  
+The transition from calculation to computation started with the **Babbage Machine**, an analytical *difference* engine created by Charles Babbage in 1836. Though, the machine was not actually built until the next century.  
 
-## Day Three  
+Who is considered the first computer programmer? -The first computer programmer was Ada Lovelace. She actually wrote the programs for the Babbage machine.  
 
-### Basic Calculator Program  
+### Hardware vs Software  
 
-Finish the calculator program by adding multi-way decision pattern, in other words `if-elif-else`.  
+Ask students if they have heard of hardware and software. Does anyone know the difference between the two? -Hardware makes up the physical components of a computer, whereas software makes up the programs, or instructions that tell the hardware what to do. They work together and make a computer a computer, so without one or the other we would not have computers! Bring up the point that hardware would be dead weight without the programs to control it.  
 
-[One way to finish a basic calculator program](https://github.com/techemstudios/nextup_lucille/blob/master/intro_to_computer_science/python_code/calculator.py)  
+#### Engineers are Concerned with Building More Efficiently  
+
+The advancements engineers made in hardware technology is categorized into generations.  
+
+**First Generation (1946 - 1951) -** Fast forward to 1946, advancements in computer hardware brought in the first *commercial computers*, first generation. One of these computers was called the ENIAC (Electronic Numerical Integrator and Computer). Computers in this generation took up the space of two or even three classrooms and they needed several people to operate them!  
+
+The main hardware component of these computers were **vacuum tubes**, switching devices with only two possible values, ON or OFF --think of lightbulbs. Pass around the vacuum tube example. Computers like the ENIAC had over 17,000 of these vacuum tubes! However, these pieces of hardware would overheat, burn out easily, so they would need constant replacement.  
+
+**Second Generation (1959 - 1965) -** We had to come up with somewthing more efficient. Enter the 2nd Generation, 1959 - 1965. These electric computers, like the IBM 1401 were still big (took up about the same size as a teacher's desk). The vaccum tube as the main component of hardware was replaced by the more efficient **transistor** switching devices. Instead of having over 17,000 vacuum tubes, we only needed about 10,000 transistors to do the same job, and better. Transistors were more efficient at controlling the flow of electricty.  
+
+[Transistor Activity](https://github.com/techemstudios/robious_ase/blob/master/intro_to_computer_science/Mini_Lessons/transistor_exercise.pdf)  
+
+#### Transistors = the *Building Blocks* of Computers  
+
+**Third Generation (1965-1971) -** The first *desktop computers*. Engineers found ways to combine transistors to form circuits. Computers in this generation, like the  Datapoint 2200 only needed to use ~3,500 tranistors. We also learned to combine circuits with other circuits, called *integrated circuits*. By combining more and more circuits, we get more switches. *Remember, circuits are made from combining transistors, which are like digital switching devices.* The more switches, the more zeroes and ones. Since computers handle data in zeroes and ones, computers were able to handle more, faster when we add more combined circuits. Engineers could further connect and minimize the space taken up with microchips.  
+
+#### Moore's Law  
+
+From the time of the invention of the Integrated Circuit, the # of circuits that could be placed on a single integrated circuit **DOUBLED** each year.  
 
 ***  
 
-## Day Four  
+# Day Three  
 
 ### Logic Gates  
 
 Review binary, value of 1 and zero and representations of each: 1 = On, True, Yes, etc.; 0 = Off, False, No, etc.  
 
-Devices that perform basic operation on electrical signals.  
+Devices that perform basic operations on electrical signals. The switching logic in tranistors and circuits comes down to zero and one.  
 
-### NOT, AND, OR  
+### AND, OR, and NOT Gates  
+
 
 How they operate, three ways we can represent them. Combine gates to form circuits.  
 
+Start by asking the class to raise their hand if you are wearing shoes **AND** a shirt; most if not all hands should go up. Ask another, raise your hand if you are wearing shoes **AND** a hat; most hands should come down. Segue into how we can represent the AND gate.  
+
+Use a whiteboard, or the flashcards to show how we can represent the logic of these gates:  
+
+1. Logic Diagram Symbol  
+2. Truth Table  
+3. Boolean  
+
+Move onto the Logic Gate Activity  
 
 ***  
-
-## Day Five  
-
-see notes.py  
-
-### Random Number Game  
-
-#### Binary Search Tree  
-
-How a computer efficiently searches an ordered (sorted) list, ordered from lowest to highest. Think about the random number game. A person picks a number between a range of numbers and asks you to guess the number they picked. Each time the you guess, the person will tell you if your guess is higher or lower, compared to the number they picked.  
-
-Let's say the person picked a number between 1 and 100. Our logical first guess could be 50. If the person told you the number is higher, then the range of possible numbers is cut in half, 50-100. If you guess 75 (the middle of the range), you once again narrow the range of possible numbers. This is a systematic search approach called *binary search*. We know that binary means two. Looking back, each guess you made divided the remaining numbers into two parts.  
-
-Let's make the random number game a program in Python. Just as with the calculator program, we'll start with a systematic approach to developing our simple program. Determine the specifications ("specs" for short): 1) Have the computer choose a random number from a range of numbers, and store the number in a variable. 2) Clearly inform the user what the computer is asking of them 3) Determine a decision based on the user's input. That's it.  
-
-#### Program Design  
-
-Translate the specs into program form.  
-
-```python  
-# In order to use random methods, we need to import the random module
-import random
-
-# Spec #1:
-# Create a variable whos value is a randomly chosen number, from a range a numbers
-number = random.randint(1, 100)
-
-# Spec #2:
-print("I'm thinking of a number between 1-100")
-# Create a variable whose value is the number guessed by the user
-guess = int(raw_input("Guess a number between 1-100: "))
-
-# Spec #3:
-# Set up a few condition statements to compare the user's guess to the randomly picked number
-if guess > number:
-  # what happens when the user's guess is higher than number picked
-  print("Your guess is too high!")
-elif guess < number:
-  # What happens when the user's guess is lower than the number picked
-  print("Your guess is too low!")
-elif guess == number:
-  # what happens when the user guesses the number picked
-  print("You guessed correctly!")
-```  
-
-Our next step in our development process is to test the program. Our program works; however, if the user guesses too high or too low, the program ends. We can easily fix this by inserting a `while` loop. First, we'll add a flag,  `GameRunning` (or call it anything you want). This will act as a signal to the program which checks whether or not the game should keep running. As long as the flag is set to `True`, the program will continue; otherwise, the program will stop running when we set the flag's value to `False`. You can relate how a while loop works to the statement, "as long as...". A flag is one of a few methods to stop a while loop.  
-
-```python
-GameRunning = True
-while True:
-    guess = int(raw_input("Guess a number between 1-100: "))
-
-    if guess > number:
-        print("Your guess is too high!")
-    elif  guess < number:
-        print("Your guess is too low!")
-    elif guess == number:
-        print("You guessed correctly!")
-        # Since the user guessed correctly, set the flag to False
-        GameRunning = False
-        raw_input("\n\nPress enter key to exit ")
-        exit()
-```  
-
-
-
-### Computer System Layers    
-#### Abstraction  
-
-[Layers of Computer System Activity](https://github.com/techemstudios/nextup_lucille/blob/master/mini_lessons/computer_system_layers.pdf)  
-
-*15 - 20 min*     
-
-When we are working in one layer, we do not need to concern ourselves with the information in the surrounding layers. This way, we can just focus on what needs to be done in the moment. Think of abstraction as a mental model; a way to think about something. Have the unnecessary details hidden, so we can leave only the information we need to complete our goal.  
-
-Abstraction Examples:  
-
-* A Person Driving a Car  
-  - The only thing they need to focus on is the road ahead.
-  - It is unnecessary to worry about details of how the engine or electronics of the car work.
-
-* Fast Food Restaurant  
-  - At many restaurants, the names of meals have corresponding numbers.
-  - The food prep has been trained to recognize the meal number, not worry about the full name.  
-
-
-### Write Code like you Write a Story  
-
-Very important; make your code easy to read and understand. Write your program like you are writing a story about something. Stories are created for others to easily read and understand; otherwise, what is the point!? Heavily use comments in your code. This helps you and whoever is looks at your program, understand what's happening and how it's happening.  
-
-### Object Oriented Programming  
-
-As we talked about decomposing (divide and conquer) and generalization (seeing the big picture) in computational thinking, object oriented in a nutshell is to look at the interaction of simple *objects*, as being part of a complex system. Each object does something, it has its own set of properties and attributes (things it can do) and belongs to a *Class*. Let's look at an example of a dog named, Scrappy. We can say, Scrappy is a specific individual in a larger class, Dogs. In Object Oriented terms, Scrappy is a particular *instance* of the dog class. Since Scrappy is part of the dog class, we can assume certain things about him. Scrappy most likely has four legs, a tail, a wet nose, an age, and can bark. Now take a dog named, Lassy. She will have similar characteristics, but may only differ in behavior, size, or color. So, every object is an instance of some class. The class describes the general characteristics (or properties) an instance will have. The instance of the class will hold more specific properties and attributes.  
-
-### Development Process  
-
-#### Write SIMPLE Programs  
-
-*Zelle, John M. Python Programming: an Introduction to Computer Science. Franklin, Beedle & Associates, 2010*  
-
-**Analyze the Problem**  
-Figure out exactly what the problem is. What needs to be done.  
-**The Specs**  
-Determine the goals. Try out physically writing down or typing up comments/docstrings about what your program will do, what problem it will solve, the overall goal. Think abstraction; leave out the details about *how* your program will work, focus instead on *what* it will accomplish. For simple programs, just describe the inputs/outputs and how they relate.  
-**Design/Implement**  
-Lay out the program structure. Now you can focus on the *how*. As in computational thinking (mentioned earlier), design the algorithm or plan that will tackle the problem then, carry out the plan.  
-**Test/Debug**  
-Test out all parts of the program. Making a checklist may help. Does your program work as you expect it would? Don't worry, errors will be expected. Fix the errors, or debug the program.  
-**Maintain**  
-The more you continue developing the program, the more efficient it will be. Remember, engineers are concerned with building things to be the more and more efficient. Refactoring can come into play here. Getting user feedback will help in maintaining your program.  
 
